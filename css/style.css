@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html,
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    background-color: #9cadb8;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.container .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .header h1{
+    align-items: center;
+}
+
+.container .header img{
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.temporizador{
+    display: block;
+    text-align: center;
+    position: relative;
+    height: 300px;
+    width: 300px;
+}
+
+
+.container .temporizador .control button{
+    padding: 10px 10px;
+    width: 150px;
+    color: #ffffff;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 2px;
+}
+
+.container .temporizador .control button#begin{
+    background: #005598;
+}
+
+.container .temporizador .control button#stop{
+    background: #981700;
+}
+
+.container .temporizador .control .buttons{
+    display: flex;
+}
+
+.container .temporizador .relojarena{
+    background-image: url('../img/relojarena.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.svgrelojarena{
+    position: absolute;
+    top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.container .temporizador .control #contador{
+    height: 30px;
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.fail{
+    position: absolute;
+    z-index: 999999;
+    top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.invisible{
+    display: none;
+}
